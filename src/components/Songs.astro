@@ -1,0 +1,39 @@
+---
+import Cell from './Cell.astro'
+
+const list = [['Rompe los cielos', 'Adriana Acosta', 'Bb']]
+---
+
+<section class="my-16">
+  <h2
+    class={
+      'mb-4 border-b border-neutral-500 pb-2 text-2xl font-bold sm:text-3xl'
+    }
+  >
+    Canciones
+  </h2>
+  <table class="block text-center">
+    <tbody class="grid gap-y-3 md:grid-cols-2 md:gap-x-8">
+      {
+        list.map(([name, singer, key]) => (
+          <tr class="flex rounded-lg border border-neutral-400 py-2">
+            <Cell tag="th" class="text-left">
+              <a
+                class="text-primary-500 hover:underline"
+                href="/adriana-acosta/rompe-los-cielos"
+              >
+                {name}
+              </a>
+            </Cell>
+            <Cell tag="td" class="border-x border-neutral-400 font-medium">
+              {singer}
+            </Cell>
+            <Cell tag="td" class="font-bold text-primary-900">
+              {key}
+            </Cell>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</section>
