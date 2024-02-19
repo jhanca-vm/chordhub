@@ -1,7 +1,11 @@
 ---
+import slugify from '@sindresorhus/slugify'
 import Cell from './Cell.astro'
 
-const list = [['Rompe los cielos', 'Adriana Acosta', 'Bb']]
+const list = [
+  ['Santo Espíritu ven', "Christine D'Clario", 'F'],
+  ['Rompe los cielos', 'Adriana Acosta', 'Bb']
+]
 ---
 
 <section class="my-16">
@@ -20,7 +24,7 @@ const list = [['Rompe los cielos', 'Adriana Acosta', 'Bb']]
             <Cell tag="th" class="text-left">
               <a
                 class="text-primary-500 hover:underline"
-                href="/adriana-acosta/rompe-los-cielos"
+                href={`/${slugify(singer)}/${slugify(name)}`}
               >
                 {name}
               </a>

@@ -1,0 +1,96 @@
+---
+import ChordLayout from "@layouts/ChordLayout.astro";
+import SongSection from "@components/SongSection.astro";
+import Chord from "@components/Chord.tsx";
+---
+
+<ChordLayout
+  title="Santo Espíritu ven"
+  author="Christine D'Clario"
+  youtube="ugr2_ZOFv68"
+  spotify="3fYObqxhWuisJBUoCS5Hos?si=955c7cc4ae884f05"
+  key="F"
+  bpm={64}
+  time="6/8"
+>
+  <SongSection name="Intro">
+    <p>
+      <b>//</b> <Chord value="F" /> <Chord value="   A" symbol="m" />
+      <Chord value="   D" symbol="m7" /> <Chord value="   B" symbol="bsus2" />
+      <b>//</b>
+    </p>
+  </SongSection>
+  <SongSection name="Verso I">
+    <p>Eres f<Chord value="F">ue</Chord>go en el monte</p>
+    <p>y <Chord value=" A" symbol="m">agua</Chord> en desiertos</p>
+    <p>
+      Re<Chord value="D" symbol="m7">spiro</Chord> de
+      <Chord value=" C">vida</Chord> a
+      <Chord value="B" symbol="bsus2">los hue</Chord>sos secos
+    </p>
+    <p>Señ<Chord value="F">or</Chord> te pedimos,</p>
+    <p>
+      ven <Chord value=" A" symbol="m">mué</Chord>vete aquí otra
+      <Chord value="B" symbol="bsus2">vez</Chord>
+    </p>
+  </SongSection>
+  <SongSection name="Verso II">
+    <p>Eres f<Chord value="F">ue</Chord>rza y defensa</p>
+    <p>ante <Chord value="A" symbol="m">los</Chord> enemigos</p>
+    <p>
+      Ma<Chord value="D" symbol="m7">ná  de</Chord> los
+      <Chord value=" C">cie</Chord>los y
+      <Chord value="B" symbol="bsus2">aliento</Chord> vivo
+    </p>
+    <p>Señ<Chord value="F">or</Chord> te pedimos,</p>
+    <p>
+      ven <Chord value=" A" symbol="m">mué</Chord>vete aquí otra
+      <Chord value="B" symbol="bsus2">vez</Chord>
+    </p>
+  </SongSection>
+  <SongSection name="Coro">
+    <p>
+      <Chord value="B" symbol="bsus2">Santo</Chord>
+      Espíri<Chord value="G" symbol="m7">tu, ven</Chord>
+      muévet<Chord value="F">e</Chord> <Chord value="   A" symbol="m" />
+    </p>
+    <p>
+      <Chord value="B" symbol="bsus2">Santo</Chord>
+      Espíri<Chord value="G" symbol="m7">tu, ven</Chord>
+      mu<Chord value="F">évete</Chord>
+    </p>
+  </SongSection>
+  <SongSection name="Verso III">
+    <p>
+      Eres m<Chord value="F">a</Chord>no que sana y
+      <Chord value="A" symbol="m">trae</Chord> esperanza
+    </p>
+    <p>
+      Re<Chord value="D" symbol="m7">nuevo</Chord> de
+      <Chord value="  C">paz</Chord> para el
+      <Chord value="B" symbol="bsus2">alma cansada</Chord>
+    </p>
+    <p>Señ<Chord value="F">or</Chord> te pedimos,</p>
+    <p>
+      ven <Chord value=" A" symbol="m">mué</Chord>vete aquí otra
+      <Chord value="B" symbol="bsus2">vez</Chord>
+    </p>
+  </SongSection>
+  <SongSection name="Estribillo">
+    <p>
+      <Chord value="B" symbol="bsus2"><span /></Chord> Lo creemos,
+      <Chord value="D" symbol="m7" /> lo creemos
+    </p>
+    <p>
+      <Chord value="C" /> Tu poder todo
+      <Chord value="G" symbol="m7">lo puede</Chord> hacer
+    </p>
+    <p>
+      <Chord value="B" symbol="bsus2"><span /></Chord> Lo creemos,
+    </p>
+    <p>
+      <Chord value="D" symbol="m7" /> Santo Espíritu
+      <Chord value="  C">ven</Chord>
+    </p>
+  </SongSection>
+</ChordLayout>

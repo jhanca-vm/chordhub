@@ -48,7 +48,7 @@ const { title, author, youtube, spotify, key, bpm, time = '4/4' } = Astro.props
     <nav class="my-2 flex gap-x-1">
       <ExternalLink href={`https://www.youtube.com/watch?v=${youtube}`}>
         <img
-          class="w-7"
+          class="w-7 hover:opacity-80"
           src="/icons/youtube.svg"
           alt="YouTube"
           width="24"
@@ -57,7 +57,7 @@ const { title, author, youtube, spotify, key, bpm, time = '4/4' } = Astro.props
       </ExternalLink>
       <ExternalLink href={`https://open.spotify.com/intl-es/track/${spotify}`}>
         <img
-          class="w-7"
+          class="w-7 hover:opacity-80"
           src="/icons/spotify.svg"
           alt="Spotify"
           width="24"
