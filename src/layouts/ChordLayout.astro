@@ -1,18 +1,19 @@
 ---
 import ExternalLink from '@components/ExternalLink.astro'
 import BaseLayout from './BaseLayout.astro'
+import type { FunctionComponent } from 'preact'
 
 interface Props {
   title: string
   author: string
   youtube?: string
   spotify?: string
-  key: string
+  Key: FunctionComponent
   bpm: number
   time?: string
 }
 
-const { title, author, youtube, spotify, key, bpm, time = '4/4' } = Astro.props
+const { title, author, youtube, spotify, Key, bpm, time = '4/4' } = Astro.props
 ---
 
 <BaseLayout
@@ -67,13 +68,13 @@ const { title, author, youtube, spotify, key, bpm, time = '4/4' } = Astro.props
     </nav>
     <div
       class:list={[
-        'flex gap-x-5 font-medium text-primary-900 md:mt-4 md:flex-col',
-        'md:gap-y-2 md:border-t md:border-neutral-400 md:pt-3'
+        'flex gap-x-5 font-medium text-primary-900 tracking-wide md:mt-4',
+        'md:flex-col md:gap-y-2 md:border-t md:border-neutral-400 md:pt-3'
       ]}
     >
-      <p>
+      <p class="[&_strong:last-child]:font-semibold">
         <strong class="font-semibold text-neutral-900">Tono:</strong>
-        {key}
+        <Key />
       </p>
       <p>
         <strong class="font-semibold text-neutral-900">BPM:</strong>

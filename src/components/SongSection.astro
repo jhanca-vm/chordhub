@@ -19,12 +19,7 @@ interface Props {
   >
     {Astro.props.name}
   </summary>
-  <div
-    class:list={[
-      'mb-6 mt-5 leading-none [&_b]:mx-2 [&_b]:font-semibold [&_p]:my-4',
-      '[&_strong]:whitespace-pre'
-    ]}
-  >
+  <div class="mb-6 mt-5 leading-none [&_b]:mx-2 [&_b]:font-semibold [&_p]:my-4">
     <slot />
   </div>
 </details>

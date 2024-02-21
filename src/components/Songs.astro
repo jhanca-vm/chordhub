@@ -1,10 +1,12 @@
 ---
 import slugify from '@sindresorhus/slugify'
 import Cell from './Cell.astro'
+import { F, Bb } from './Chords'
+import type { FunctionComponent } from 'preact'
 
-const list = [
-  ['Santo Espíritu ven', "Christine D'Clario", 'F'],
-  ['Rompe los cielos', 'Adriana Acosta', 'Bb']
+const list: [string, string, FunctionComponent][] = [
+  ['Santo Espíritu ven', "Christine D'Clario", F],
+  ['Rompe los cielos', 'Adriana Acosta', Bb]
 ]
 ---
 
@@ -19,7 +21,7 @@ const list = [
   <table class="block text-center">
     <tbody class="grid gap-y-3 md:grid-cols-2 md:gap-x-8">
       {
-        list.map(([name, singer, key]) => (
+        list.map(([name, singer, Key]) => (
           <tr class="flex rounded-lg border border-neutral-400 py-2">
             <Cell tag="th" class="text-left">
               <a
@@ -32,8 +34,8 @@ const list = [
             <Cell tag="td" class="border-x border-neutral-400 font-medium">
               {singer}
             </Cell>
-            <Cell tag="td" class="font-bold text-primary-900">
-              {key}
+            <Cell tag="td" class="text-primary-900">
+              <Key />
             </Cell>
           </tr>
         ))

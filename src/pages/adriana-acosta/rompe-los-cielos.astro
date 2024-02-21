@@ -1,7 +1,7 @@
 ---
 import ChordLayout from '@layouts/ChordLayout.astro'
 import SongSection from '@components/SongSection.astro'
-import Chord from '@components/Chord.tsx'
+import { Bb, Eb, F } from '@components/Chords'
 ---
 
 <ChordLayout
@@ -9,90 +9,56 @@ import Chord from '@components/Chord.tsx'
   author="Adriana Acosta"
   youtube="L5xUeu6tEmc"
   spotify="5yTUP7KadUvOmLR0jUEHiE?si=4214d15f7a644ade"
-  key="Bb"
+  Key={Bb}
   bpm={118}
 >
   <SongSection name="Intro">
-    <p><b>////</b> <strong>{'Bb    Eb    F    Eb'}</strong> <b>////</b></p>
+    <p class="whitespace-pre">
+      <b>////</b> <Bb />{'    '}<Eb />{'    '}<F />{'    '}<Eb /> <b>////</b>
+    </p>
   </SongSection>
   <SongSection name="Verso I">
-    <p>
-      <b>//</b>
-      <Chord value="Bb" />Espíritu <Chord value="Eb">San</Chord>to
-      <Chord value="F">ven</Chord>
-      <Chord value=" Eb" />
+    <p class="whitespace-pre">
+      <b>//</b> <Bb /> Espíritu <Eb>San</Eb>to v<F>en</F>{'    '}<Eb />
+    </p>
+    <p class="whitespace-pre">
+      <Bb /> ven y sa<Eb>tur</Eb>a mi s<F>er</F>{'    '}<Eb />
     </p>
     <p>
-      <Chord value="Bb" />ven y <Chord value="Eb">satura</Chord> mi
-      <Chord value="F">ser</Chord>
-      <Chord value="  Eb" />
+      <Bb /> ven que yo q<Eb>uie</Eb>ro ten<F>er</F> en <Eb>tod</Eb>o mi ser
     </p>
     <p>
-      <Chord value="Bb" />ven que yo
-      <Chord value="Eb">quie</Chord>ro te<Chord value="F">ner</Chord> en
-      <Chord value="Eb">tod</Chord>o mi ser
-    </p>
-    <p>
-      <Chord value="Bb" />la unción que
-      <Chord value="Eb">cam</Chord>bia to<Chord value="F">do</Chord>
-      <Chord value="Eb">oohh</Chord>h <b>//</b>
+      <Bb /> la unción que <Eb>cam</Eb>bia to<F>do</F> o<Eb>ohh</Eb>h <b>//</b>
     </p>
   </SongSection>
   <SongSection name="Coro">
+    <p><Bb /> Rom<Eb>pe</Eb> los cielos, <F /> Rom<Eb>pe</Eb> los cielos</p>
+    <p><Bb /> Rom<Eb>pe</Eb> los cielos, <F /> Rom<Eb>pe</Eb> los cielos</p>
     <p>
-      <Chord value="Bb" /> Rom<Chord value="Eb">pe</Chord> los cielos,
-      <Chord value="F" /> Rom<Chord value="Eb">pe</Chord> los cielos
+      <Bb /> y lléna<Eb>me</Eb>, llénam<F>e</F> Es<Eb>pír</Eb>itu <Bb>San</Bb>to
     </p>
-    <p>
-      <Chord value="Bb" /> Rom<Chord value="Eb">pe</Chord> los cielos,
-      <Chord value="F" /> Rom<Chord value="Eb">pe</Chord> los cielos
+    <p>y lléna<Eb>me</Eb>, llénam<F>e</F> Es<Eb>pír</Eb>itu <Bb>San</Bb>to</p>
+    <p class="whitespace-pre">
+      <Eb>Ale</Eb>luya, <F />{'    '}<Eb>Ale</Eb>luya{'  '}<Bb />
     </p>
-    <p>
-      <Chord value="Bb" />y lléna<Chord value="Eb">me</Chord>, lléna<Chord
-        value="F"
-      >
-        {'me'}
-      </Chord>
-      Es<Chord value="Eb">pír</Chord>itu <Chord value="Bb">San</Chord>to
-    </p>
-    <p>
-      y lléna<Chord value="Eb">me</Chord>, lléna<Chord value="F">me</Chord>
-      Es<Chord value="Eb">pír</Chord>itu <Chord value="Bb">San</Chord>to
-    </p>
-    <p>
-      <Chord value="Eb">Ale</Chord>luya, <Chord value=" F  " />
-      <Chord value="Eb">Ale</Chord>luya <Chord value=" Bb" />
-    </p>
-    <p>
-      <Chord value="Eb">Ale</Chord>luya, <Chord value=" F  " />
-      <Chord value="Eb">Ale</Chord>luya <Chord value=" Bb" />
+    <p class="whitespace-pre">
+      <Eb>Ale</Eb>luya, <F />{'    '}<Eb>Ale</Eb>luya{'  '}<Bb />
     </p>
   </SongSection>
   <SongSection name="Interludio">
-    <p><b>////</b> <strong>{'Bb    Eb    F    Eb'}</strong> <b>////</b></p>
+    <p class="whitespace-pre">
+      <b>////</b> <Bb />{'    '}<Eb />{'    '}<F />{'    '}<Eb /> <b>////</b>
+    </p>
   </SongSection>
   <SongSection name="Verso II">
-    <p>
-      <b>//</b>
-      <Chord value="Bb">Señ</Chord>or i<Chord value="Eb">nvad</Chord>e mi
-      <Chord value="F">ser</Chord>
-      <Chord value="  Eb" />
+    <p class="whitespace-pre">
+      <b>//</b> <Bb>Señ</Bb>or in<Eb>vad</Eb>e mi s<F>er</F>{'    '}<Eb />
     </p>
-    <p>
-      <Chord value="Bb" />porque de<Chord value="Eb">{' ti '}</Chord>tengo
-      <Chord value="F">sed</Chord>
-      <Chord value="  Eb" />
+    <p class="whitespace-pre">
+      <Bb /> porque de<Eb> ti </Eb>tengo s<F>ed</F>{'    '}<Eb />
     </p>
-    <p>
-      <Chord value="Bb" />no quiero <Chord value="Eb">ser</Chord>
-      como ayer<Chord value="F" />
-    </p>
-    <p>
-      quiero un <Chord value="Eb">nue</Chord>vo mover <Chord value="Bb" />
-    </p>
-    <p>
-      de tu Es<Chord value="Eb">pír</Chord>itu San<Chord value="F">to</Chord>
-      <Chord value="Eb">oohh</Chord>h <b>//</b>
-    </p>
+    <p><Bb /> no quiero <Eb>ser</Eb> como ayer</p>
+    <p><F /> quiero un <Eb>nue</Eb>vo mover</p>
+    <p><Bb /> de tu Es<Eb>pír</Eb>itu San<F>to</F> o<Eb>ohh</Eb>h <b>//</b></p>
   </SongSection>
 </ChordLayout>
