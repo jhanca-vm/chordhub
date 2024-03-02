@@ -3,10 +3,26 @@ import type { FunctionComponent } from 'preact'
 interface Props {
   value: string
   symbol?: string
+  extension?: string
 }
 
-const Chord: FunctionComponent<Props> = ({ value, symbol, children }) => {
-  const text = <>{value}{symbol && <small>{symbol}</small>}</>
+const Chord: FunctionComponent<Props> = ({
+  value,
+  symbol,
+  extension,
+  children
+}) => {
+  const text = (
+    <>
+      {value}
+      {(symbol || extension) && (
+        <small>
+          {symbol}
+          {extension && <span className="font-semibold">{extension}</span>}
+        </small>
+      )}
+    </>
+  )
 
   if (!children) {
     return <strong class="align-top pl-0.5 text-primary-900">{text}</strong>

@@ -6,11 +6,11 @@ export const C: FunctionComponent = ({ children }) => {
 }
 
 export const Csus4: FunctionComponent = ({ children }) => {
-  return <Chord value="C" symbol="sus4">{children}</Chord>
+  return <Chord value="C" extension="sus4">{children}</Chord>
 }
 
 export const Dm7: FunctionComponent = ({ children }) => {
-  return <Chord value="D" symbol="m7">{children}</Chord>
+  return <Chord value="D" symbol="m" extension="7">{children}</Chord>
 }
 
 export const Eb: FunctionComponent = ({ children }) => {
@@ -26,7 +26,7 @@ export const Gm: FunctionComponent = ({ children }) => {
 }
 
 export const Gm7: FunctionComponent = ({ children }) => {
-  return <Chord value="G" symbol="m7">{children}</Chord>
+  return <Chord value="G" symbol="m" extension="7">{children}</Chord>
 }
 
 export const Am: FunctionComponent = ({ children }) => {
@@ -38,5 +38,9 @@ export const Bb: FunctionComponent = ({ children }) => {
 }
 
 export const Bbsus2: FunctionComponent = ({ children }) => {
-  return <Chord value="B" symbol="bsus2">{children}</Chord>
+  return <Chord value="B" symbol="b" extension="sus2">{children}</Chord>
+}
+
+export const Bbadd2: FunctionComponent = ({ children }) => {
+  return <Chord value="B" symbol="b" extension="add2">{children}</Chord>
 }
