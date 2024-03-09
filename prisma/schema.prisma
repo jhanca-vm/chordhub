@@ -1,0 +1,23 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:songs.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Song {
+  slug       String   @id
+  name       String
+  artist     String
+  album      String?
+  key        String
+  alteration Int      @default(1)
+  bpm        Int
+  time       String   @default("4/4")
+  youtube    String
+  spotify    String
+  createdAt  DateTime @default(now())
+  chords     String
+}

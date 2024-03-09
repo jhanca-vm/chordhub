@@ -1,14 +1,18 @@
 # ChordHub
 
-## 🧞 Commands
+## Getting Started
 
-All commands are run from the root of the project, from a terminal:
+First, run the development server:
 
-| Command             | Action                                           |
-| :------------------ | :----------------------------------------------- |
-| `pnpm install`      | Installs dependencies                            |
-| `pnpm dev`          | Starts local dev server at `localhost:3000`      |
-| `pnpm build`        | Build your production site to `./dist/`          |
-| `pnpm preview`      | Preview your build locally, before deploying     |
-| `pnpm astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro --help` | Get help using the Astro CLI                     |
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the
+result.
